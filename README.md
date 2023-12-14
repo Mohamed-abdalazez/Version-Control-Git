@@ -18,6 +18,7 @@
 ### Table of content
 
 1. [Version Control Systems (VCSs) - breif.](#desc0)
+2. [Git Architecture.](#desc0)
 
 <a name="desc0"></a>
 ### Version Control Systems (VCSs) - breif.
@@ -36,3 +37,11 @@
   </samp>
   </P>
 </p>
+
+
+<a name="desc1"></a>
+### Git Architecture.
+
+<img alt="KilluaAndGonArch.png" src="assets/KilluaAndGonArch.png">
+
+
