@@ -71,7 +71,7 @@
   +- killua.txt (blob, contents = "Baka gon!")
   ```
 #### OS agnostic
-- Runs under any operating system
+- Runs under any operating system.
 - To make it runs under an operating system:
   - Semple Folder Structure.
   - All its components are straightforward.
