@@ -134,4 +134,8 @@
   gon@killua:~$ echo -e "blob 9\0baka gon" | shasum
   6bec9a5fa940e76212a8a224301ac83a3a5452d2  -
   ```
-  - Note that the ```-e``` option is used to recognize '\0' as an escape character.
+  - Note that the ```-e``` option is used to recognize ```\0``` as an escape character.
+
+#### track the history
+- By utilizing SHA-1 for the object, if there's any change in a file or directory, Git compares the new SHA-1 with the current one saved in the ```.git``` file.
+- Git recognizes the change and takes appropriate actions, as we will see later on.
