@@ -125,7 +125,7 @@
 - so "baka gon" converted to:
   - ```type``` +  ```size``` + ```\0``` + ```content``` :
   - "blob 9\0baka gon"
-      - Size: 9, which is the number of characters in ```baka gon``` + 1 null character.
+      - Size: 9, which is the number of characters in ```baka gon``` + 1 hidden line break.
   <br>
   
   ```
