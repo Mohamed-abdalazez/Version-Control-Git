@@ -19,7 +19,8 @@
 
 1. [Version Control Systems (VCSs) - breif.](#desc0)
 2. [Git Architecture.](#desc1)
-3. [Understanding the 3-Tree Architecture of Git.](#desc2)
+3. [Files State in Git.](#desc2)
+4. [Understanding the 3-Tree Architecture of Git.](#desc3)
 
 <a name="desc0"></a>
 ### Version Control Systems (VCSs) - breif.
@@ -141,7 +142,15 @@
 - By utilizing SHA-1 for the object, if there's any change in a file or directory, Git compares the new SHA-1 with the current one saved in the ```.git``` file.
 - Git recognizes the change and takes appropriate actions, as we will see later on.
 
+
 <a name="desc2"></a>
+### Files State in Git.
+- Untracked(U).
+- Tracked.
+    - ```Modified(M)```: The version in the git repois different from the versionin the working directory.
+    - ```UNmodified```: The version in the git repo is equivalent to the version in the working directory.
+ 
+<a name="desc3"></a>
 ### Understanding the 3-Tree Architecture of Git.
 #### overview
 - Working Directory or (Working tree).
