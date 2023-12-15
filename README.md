@@ -81,3 +81,56 @@
 
 #### Unique ID
 - Each object tracked must have a unique ID.
+- using any hash function, but it must be deterministic.
+    - which, when given a certain input, produces the same output each time.
+    - eg. shasum function in linux, SHA-1, MD-5.
+    <br>
+
+  ```
+    gon@killua:~$ echo "killua" | shasum
+    a9080963645c21a1507822e0298b5bd4867d022c  -
+    gon@killua:~$ echo "killua" | shasum
+    a9080963645c21a1507822e0298b5bd4867d022c  -
+    gon@killua:~$ echo "gon" | shasum
+    251da38c857f39611d2a999d89b7b695583a7ece  -
+    gon@killua:~$ echo "gon" | shasum
+    251da38c857f39611d2a999d89b7b695583a7ece  -
+  ```
+<P align="center">
+  <samp>
+    You can see that: when given a certain input, produces the same output each time.
+  </samp>
+</P>
+
+- Git uses ```git hash-object```, which is equivalent to ```shasum``` in Linux.
+- but there some issue, let see that:
+  
+  ```
+  gon@killua:~$ echo "baka gon" | git hash-object --stdin
+  6bec9a5fa940e76212a8a224301ac83a3a5452d2
+  gon@killua:~$ echo "baka gon" | shasum
+  a9cff0296509ebac8f8441ab19c3c316cb0407d4  -
+  ```
+<P align="center">
+  <samp>
+    Yes, good observation. The output is different even though both use SHA-1.
+  </samp>
+</P>
+
+
+- that because git adds some information to the input as follows:
+   - type
+   - size
+   - Null character
+- so "baka gon" converted to:
+  - ```type``` +  ```size``` + ```\0``` + ```content``` :
+  - "blob 9\0baka gon"
+      - Size: 9, which is the number of characters in ```baka gon``` + 1 null character.
+  <br>
+  
+  ```
+  gon@killua:~$ echo "baka gon" | git hash-object --stdin
+  6bec9a5fa940e76212a8a224301ac83a3a5452d2
+  gon@killua:~$ echo -e "blob 9\0baka gon" | shasum
+  6bec9a5fa940e76212a8a224301ac83a3a5452d2  -
+  ```
