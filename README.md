@@ -1,7 +1,7 @@
 # Version-Control-Git
 
 <p align="center">
-  <img src="assets/Killua.png">
+  <img src="assets/Story.jpeg" width="300px" height="300px">
   <br>
    <samp>
   "When Gon and Killua decided to develop<br>
