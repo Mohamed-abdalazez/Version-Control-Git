@@ -143,6 +143,30 @@
 
 <a name="desc2"></a>
 ### Understanding the 3-Tree Architecture of Git.
+#### overview
 - Working Directory or (Working tree).
 - Staging Area (Index)
 - git repo ```.git```.
+<img alt="3-tree.png" src="assets/3-tree.png">
+
+#### The normal pipeline to take the snapshot.
+
+- first of all
+<img alt="1_pipeline" src="assets/1_pipeline.png">
+
+- There is nothing added to the working tree yet; let's add a text file.
+<img alt="2_pipeline" src="assets/2_pipeline.png">
+
+- Once you add it to the staging area, it becomes a tracked file
+     - The SHA of this modification recorded in the staging area.
+     - And git will initialize a new object for this modification in the git repo with the same SHA-1.
+<img alt="3_pipeline" src="assets/3_pipeline.png">
+
+- observation
+<img alt="observation" src="assets/observation.png">
+
+- Once you use the commit command, there is the first version inside the Git repository.
+<img alt="commit" src="assets/commit.png">
+
+- So let's summarize everything.
+<img alt="summary" src="assets/summary.png">
