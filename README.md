@@ -134,3 +134,4 @@
   gon@killua:~$ echo -e "blob 9\0baka gon" | shasum
   6bec9a5fa940e76212a8a224301ac83a3a5452d2  -
   ```
+  - Note that the ```-e``` option is used to recognize '\0' as an escape character.
