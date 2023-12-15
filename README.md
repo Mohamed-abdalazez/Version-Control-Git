@@ -19,6 +19,7 @@
 
 1. [Version Control Systems (VCSs) - breif.](#desc0)
 2. [Git Architecture.](#desc1)
+3. [Understanding the 3-Tree Architecture of Git.](#desc2)
 
 <a name="desc0"></a>
 ### Version Control Systems (VCSs) - breif.
@@ -139,3 +140,9 @@
 #### Track the history
 - By utilizing SHA-1 for the object, if there's any change in a file or directory, Git compares the new SHA-1 with the current one saved in the ```.git``` file.
 - Git recognizes the change and takes appropriate actions, as we will see later on.
+
+<a name="desc2"></a>
+### Understanding the 3-Tree Architecture of Git.
+- Working Directory or (Working tree).
+- Staging Area (Index)
+- git repo ```.git```.
