@@ -136,6 +136,6 @@
   ```
   - Note that the ```-e``` option is used to recognize ```\0``` as an escape character.
 
-#### track the history
+#### Track the history
 - By utilizing SHA-1 for the object, if there's any change in a file or directory, Git compares the new SHA-1 with the current one saved in the ```.git``` file.
 - Git recognizes the change and takes appropriate actions, as we will see later on.
