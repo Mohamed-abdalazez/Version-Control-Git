@@ -38,10 +38,46 @@
   </P>
 </p>
 
-
 <a name="desc1"></a>
 ### Git Architecture.
 
 <img alt="KilluaAndGonArch.png" src="assets/KilluaAndGonArch.png">
 
+#### Track Everything
+- content
+- metadate
+##### To make everything tracked, we must convert everything to objects.
+- An object is a ```blob```, ```tree```, or ```commit```:
+- each file converted to ```blob```.
+    - the ```blob``` contains: 
+        - content.
+        - metadate eg.(permissions, name of the file, type, size, ...).
+- each folder converted to ```tree```.
+    - the ```tree``` contains: 
+        - content - hierarchy.
+        - metadata.
 
+- Snapshot
+  - A snapshot is the  top-level tree being tracked. For example, the tree might look like this:
+  <br>
+
+  ```
+  <root> (tree)
+  |
+  +- gon (tree)
+  |  |
+  |  + killua.txt (blob, contents = "Baka!")
+  |
+  +- killua.txt (blob, contents = "Baka gon!")
+  ```
+#### OS agnostic
+- Runs under any operating system
+- To make it runs under an operating system:
+  - Semple Folder Structure.
+  - All its components are straightforward.
+     - most of it, sample files.
+   - Portable folder run across any operating system.
+     - It will be created inside your working tree as a hidden folder (.git).
+
+#### Unique ID
+- Each object tracked must have a unique ID.
