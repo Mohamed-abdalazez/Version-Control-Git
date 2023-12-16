@@ -182,3 +182,44 @@
 
 - So let's summarize everything.
 <img alt="summary" src="assets/summary.png">
+
+- Now, let's create another commit and check the logs to observe something new.
+  ```
+  gon@killua:~/safrot$ git commit -m "Added: killua quote"
+  [master 2e173f5] Added: killua quote
+    1 file changed, 2 insertions(+)
+  gon@killua:~/safrot$ git log
+  commit 2e173f54760acec95aa13e9528bb051297086346 (HEAD -> master)
+  Author: killua-zoldyck <killua.zoldyck@hunter.com>
+  Date:   Sat Dec 16 16:31:10 2023 +0200
+
+    Added: killua quote
+
+  commit 0831b2abdf87c45490927bbe67987bf54a13fe05
+  Author: killua-zoldyck <killua.zoldyck@hunter.com>
+  Date:   Sat Dec 16 10:19:25 2023 +0200
+
+    initial commit
+  gon@killua:~/safrot$ git cat-file -p 2e173
+  tree 095a5a3702c66d4f07cd4eb89e4db0fe58f9518b
+  parent 0831b2abdf87c45490927bbe67987bf54a13fe05
+  author killua-zoldyck <killua.zoldyck@hunter.com> 1702737070 +0200
+  committer killua-zoldyck <killua.zoldyck@hunter.com> 1702737070 +0200
+
+  Added: killua quote
+  ```
+    - When inspecting the contents of the second commit to see the objects inside, you will notice the new object called parent.
+        - ```parent 0831b2abdf87c45490927bbe67987bf54a13fe05```
+        - This ```parent``` object indicates the previous commit.
+        - let's inspect the ```parent``` object to prove that:
+
+          ```
+          gon@killua:~/safrot$ git cat-file -p 0831b
+          tree a8b5d8e390da04fddb206c254066da178fd51f60
+          author killua-zoldyck <killua.zoldyck@hunter.com> 1702714765 +0200
+          committer killua-zoldyck <killua.zoldyck@hunter.com> 1702714765 +0200
+
+          initial commit 
+          ```
+  - This leads us to a new concept in Git, which is the ```branch```.
+      <img alt="branch" src="assets/branch.png">
