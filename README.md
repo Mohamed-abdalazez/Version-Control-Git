@@ -176,6 +176,9 @@
 
 - Once you use the commit command, there is the first version inside the Git repository.
 <img alt="commit" src="assets/commit.png">
+<p align="center">
+  <samp>  We noticed that, to track any batch of modifications, we have to use the commit object.</samp>
+</p>
 
 - So let's summarize everything.
 <img alt="summary" src="assets/summary.png">
