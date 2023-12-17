@@ -278,3 +278,4 @@
        - So you can step back and move forward by moving the ```HEAD``` to the commit that you want.
          
           <img alt="head.png" src="assets/head.png">
+       - Explore all aspects of [```git reset```](https://git-scm.com/docs/git-reset).
