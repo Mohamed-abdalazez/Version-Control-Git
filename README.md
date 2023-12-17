@@ -262,3 +262,19 @@
     ```
     
 - Exploring the process of rolling back and rolling forward between different versions.
+     - Let's list all commits using the ```git log --oneline``` command.
+
+       ```
+       gon@killua:~/safrot$ git log --oneline 
+       485f5b3 (HEAD -> master) Added: Koala quote
+       fff45f7 Killua tell gon something
+       2e173f5 Added: killua quote
+       0831b2a initial commit
+       ```
+  
+       - There are four commits.
+       - You can observe that the HEAD points to the last commit, which is also the current working tree. This indicates that the commit the HEAD points to is the working tree.
+   
+       - So you can step back and move forward by moving the ```HEAD``` to the commit that you want.
+         
+          <img alt="head.png" src="assets/head.png">
