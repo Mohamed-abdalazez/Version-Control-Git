@@ -1,5 +1,9 @@
 # Version-Control-Git
-
+<p align="center">
+  <samp>
+    Please note that this repository serves as an introduction to understanding Git. For comprehensive details, you can refer to the <a href="https://git-scm.com/doc">official Git documentation</a>.
+  </samp>
+</p>
 <p align="center">
   <img src="assets/Story.jpeg" width="300px" height="300px">
   <br>
@@ -22,6 +26,7 @@
 3. [Files State in Git.](#desc2)
 4. [Understanding the 3-Tree Architecture of Git.](#desc3)
 5. [Undoing Changes.](#desc4)
+6. [Branching.](#desc5)
 
 <a name="desc0"></a>
 ### Version Control Systems (VCSs) - breif.
@@ -279,3 +284,7 @@
          
           <img alt="head.png" src="assets/head.png">
        - Explore all aspects of [```git reset```](https://git-scm.com/docs/git-reset).
+
+
+<a name="desc5"></a>
+### Branching.
