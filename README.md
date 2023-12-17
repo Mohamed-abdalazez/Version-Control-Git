@@ -21,6 +21,7 @@
 2. [Git Architecture.](#desc1)
 3. [Files State in Git.](#desc2)
 4. [Understanding the 3-Tree Architecture of Git.](#desc3)
+5. [Undoing Changes.](#desc4)
 
 <a name="desc0"></a>
 ### Version Control Systems (VCSs) - breif.
@@ -223,3 +224,41 @@
           ```
   - This leads us to a new concept in Git, which is the ```branch```.
       <img alt="branch" src="assets/branch.png">
+
+
+<a name="desc4"></a>
+### Undoing Changes.
+- To stop tracking a file in Git, you can use the ```git rm``` command with the ```--cached``` option.
+  
+    ```
+    git rm --cached filename
+    ```
+    - This will commit the removal of the file from the staging area, and the file will no longer be tracked by Git. However, it will still exist in your working directory. If you want to remove the file from both the working directory and the repository, you can use ```git rm``` without the ```--cached``` option:
+      
+       ```
+       git rm filename
+       ```
+       
+- To restore or discard changes in your working directory, use git restore with the filename. This allows you to undo modifications to a file and revert it to the state in the last commit.
+  
+  ```
+  git restore filename
+  ```
+
+- To unstage changes from the staging area (index) back to your working directory.
+
+  ```
+  git restore --staged filename
+  ```
+  - After running this command, the changes to the specified file are removed from the staging area, but the modifications remain in your working directory. If you want to discard the changes in your working directory as well, you can follow it up with:
+    
+       ```
+      git restore filename
+       ```
+- To edit the last commit message in Git, you can use the ```--amend``` option with the ```git commit``` command:
+  
+    ```
+    git commit --amend
+    ```
+    
+- Exploring the process of rolling back and rolling forward between different versions.
