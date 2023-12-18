@@ -27,6 +27,7 @@
 4. [Understanding the 3-Tree Architecture of Git.](#desc3)
 5. [Undoing Changes.](#desc4)
 6. [Tagging.](#desc5)
+7. [Branching](#desc6)
 
 <a name="desc0"></a>
 ### Version Control Systems (VCSs) - breif.
@@ -322,3 +323,31 @@
 - Explore all aspects of [```git tag```](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
 
+<a name="desc6"></a>
+### Branching.
+
+- So far, our sequence looks like this:
+  
+  <img alt="b-1.png" src="assets/b-1.png">
+  
+- Now, this is the ```master``` branch. Let's create a new branch and see what will happen:
+
+  <img alt="b-2.png" src="assets/b-2.png">
+
+- Now if you switch to the ```GreedIsland``` branch, and the sequence will look like this:
+
+  <img alt="b-3.png" src="assets/b-3.png">
+
+- Now let's make changes in files and commit these changes, but in the ```GreedIsland``` branch.
+
+  <img alt="b-4.png" src="assets/b-4.png">
+
+- Now, after being satisfied with this branch, and you want to merge the ```GreedIsland``` branch into ```Master```:
+
+  <img alt="b-5.png" src="assets/b-5.png">
+
+- Now you can delete the ```GreedIsland``` branch"
+
+  <img alt="b-6.png" src="assets/b-6.png">
+
+<p align="center"><samp>But note that in this case, the master branch, from the moment you create the new branch, doesn't change, and this is not common in real life.</samp></p>
