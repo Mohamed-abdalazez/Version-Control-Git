@@ -26,7 +26,7 @@
 3. [Files State in Git.](#desc2)
 4. [Understanding the 3-Tree Architecture of Git.](#desc3)
 5. [Undoing Changes.](#desc4)
-6. [Branching.](#desc5)
+6. [Tagging.](#desc5)
 
 <a name="desc0"></a>
 ### Version Control Systems (VCSs) - breif.
@@ -287,4 +287,38 @@
 
 
 <a name="desc5"></a>
-### Branching.
+### Tagging.
+
+<img alt="Tagging.png" src="assets/Tagging.png">
+
+- Now you can use the tag name to show this commit: ```git show v1.1```
+
+  ```
+  gon@killua:~/safrot$ git show v1.1
+  tag v1.1
+  Tagger: killua-zoldyck <killua.zoldyck@hunter.com>
+  Date:   Mon Dec 18 08:57:16 2023 +0200
+
+  Version 1.1
+
+  commit 485f5b30c37132a7dc95ec5a75d9df6eb95a37c4 (HEAD -> master, tag: v1.1)
+  Author: killua-zoldyck <killua.zoldyck@hunter.com>
+  Date:   Sun Dec 17 14:17:18 2023 +0200
+
+    Added: Koala quote
+
+  diff --git a/file.txt b/file.txt
+  index 37c8c0d..60b5bfd 100644
+  --- a/file.txt
+  +++ b/file.txt
+  @@ -1,4 +1,5 @@
+   baka gon
+   People Only Find Me Interesting Because They Can't Tell Whether I'm Serious Or Not.
+   Gon, You Are Light. But Sometimes You Shine So Brightly, I Must Look Away. Even So, Is It Still Okay If I Stay At Your Side?
+  +No Matter The Pain, I Will Keep Living. So, When I Die, I'll Feel I Did The Best I Could." – Koala
+  :
+  ```
+  
+- Explore all aspects of [```git tag```](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+
+
