@@ -351,3 +351,26 @@
   <img alt="b-6.png" src="assets/b-6.png">
 
 <p align="center"><samp>But note that in this case, the master branch, from the moment you create the new branch, doesn't change, and this is not common in real life.</samp></p>
+
+##### So let's consider a case where you create a new branch, make edits in this branch, and the master branch is also edited
+
+- Master branch
+
+    <img alt="b-7.png" src="assets/b-7.png">
+    
+- Create the ```GreedIsland``` branch. ```git branch GreedIsland```
+
+  <img alt="b-8.png" src="assets/b-8.png">
+
+- Now switch to the 'GreedIsland' branch and make edits.
+
+  <img alt="b-9.png" src="assets/b-9.png">
+
+- Now switch back to the ```master``` branch and make edits.
+
+  <img alt="b-10.png" src="assets/b-10.png">
+
+- Now merge ```GreedIsland``` into ```master```. ```git merge GreedIsland```
+
+  <img alt="b-11.png" src="assets/b-11.png">
+
