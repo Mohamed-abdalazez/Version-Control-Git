@@ -27,7 +27,8 @@
 4. [Understanding the 3-Tree Architecture of Git.](#desc3)
 5. [Undoing Changes.](#desc4)
 6. [Tagging.](#desc5)
-7. [Branching](#desc6)
+7. [Branching.](#desc6)
+8. [Remotes.](#desc7)
 
 <a name="desc0"></a>
 ### Version Control Systems (VCSs) - breif.
@@ -374,3 +375,7 @@
 
   <img alt="b-11.png" src="assets/b-11.png">
 
+- This is a useful [reference](https://stackoverflow.com/questions/16666089/whats-the-difference-between-git-merge-and-git-rebase) to understand the difference between ```git merge``` and ```git rebase```.
+
+<a name="desc7"></a>
+### Remotes.
