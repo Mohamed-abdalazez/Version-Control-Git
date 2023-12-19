@@ -29,7 +29,8 @@
 6. [Tagging.](#desc5)
 7. [Branching.](#desc6)
 8. [Remotes.](#desc7)
-9. [Git command line interface.](#desc8)
+9. [Resources.](#desc8)
+10. [Mission accomplished.](#desc9)
 
 <a name="desc0"></a>
 ### Version Control Systems (VCSs) - breif.
@@ -384,4 +385,20 @@
 <img alt="remotes.png" src="assets/remotes.png">
 
 <a name="desc8"></a>
-### Git command line interface.
+### Rescureses.
+```This is an inspiring resource that I highly recommend for further exploration```
+- [./missing-semester](https://missing.csail.mit.edu/2020/version-control/).
+- [ArabBigDataYoutubeChannel](https://missing.csail.mit.edu/2020/version-control/).
+
+<a name="desc9"></a>
+### Mission accomplished.
+
+<p align="center">
+   <img alt="Mission.jpeg" src="assets/Mission.jpeg" width="250px" height="250px">
+  <br>
+   <samp>
+  "Gon and Killua successfully reclaimed their land from the camera ants,<br>
+  a victory hard-earned through numerous sacrifices and with crucial assistance from Git as well.<br>
+  Following this triumph, they embarked on the task of reconstructing their land, replanting pomegranate and olive trees.<br>
+  </samp>  
+</p>
