@@ -29,6 +29,7 @@
 6. [Tagging.](#desc5)
 7. [Branching.](#desc6)
 8. [Remotes.](#desc7)
+9. [Git command line interface.](#desc8)
 
 <a name="desc0"></a>
 ### Version Control Systems (VCSs) - breif.
@@ -381,3 +382,6 @@
 ### Remotes.
 
 <img alt="remotes.png" src="assets/remotes.png">
+
+<a name="desc8"></a>
+### Git command line interface.
