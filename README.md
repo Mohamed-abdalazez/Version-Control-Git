@@ -380,4 +380,4 @@
 <a name="desc7"></a>
 ### Remotes.
 
-<img alt="remotes.png" src="remotes.png">
+<img alt="remotes.png" src="assets/remotes.png">
