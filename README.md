@@ -389,6 +389,7 @@
 ```This is an inspiring resource that I highly recommend for further exploration```
 - [./missing-semester](https://missing.csail.mit.edu/2020/version-control/).
 - [ArabBigDataYoutubeChannel](https://www.youtube.com/watch?v=Q6G-J54vgKc).
+- [rogerdudler](https://rogerdudler.github.io/git-guide/).
 
 <a name="desc9"></a>
 ### Mission accomplished.
